@@ -1,0 +1,15 @@
+/* =========================================================
+   90-RESPONSIVE.CSS
+   Ajustes finos que não couberam nos componentes acima.
+   Mobile-first: o resto do CSS já é responsivo por padrão;
+   aqui só tratamos exceções pontuais.
+   ========================================================= */
+@media (max-width: 480px){
+  .hero__stats{ grid-template-columns: repeat(3, 1fr); gap: var(--space-sm); }
+  .stat__num{ font-size: 1.3rem; }
+  .contact{ margin-inline: var(--space-2xs); padding-inline: var(--space-sm); }
+}
+
+@media (min-width: 1100px){
+  .container{ padding-inline: var(--space-xl); }
+}

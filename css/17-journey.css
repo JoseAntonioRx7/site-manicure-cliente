@@ -1,0 +1,83 @@
+/* =========================================================
+   17-JOURNEY.CSS
+   "Metas, viagens, encontros e participações" — aqui a ordem
+   cronológica é real, por isso a linha do tempo é justificada
+   (não é um enfeite: é a informação em si).
+   ========================================================= */
+.journey__filters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-xl);
+}
+.journey-filter{
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border-strong);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  transition: all var(--dur-fast);
+}
+.journey-filter.is-active,
+.journey-filter:hover{
+  border-color: var(--color-red);
+  color: var(--color-red);
+  background: var(--color-red-soft);
+}
+
+.timeline{
+  position: relative;
+  padding-left: var(--space-lg);
+  border-left: 2px solid var(--color-border);
+}
+.timeline-item{
+  position: relative;
+  padding-bottom: var(--space-xl);
+}
+.timeline-item:last-child{ padding-bottom: 0; }
+.timeline-item::before{
+  content: "";
+  position: absolute;
+  left: calc(var(--space-lg) * -1 - 6px);
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2.5px solid var(--color-red);
+}
+.timeline-item__date{
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--color-red);
+  letter-spacing: 0.04em;
+}
+.timeline-item__tag{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: var(--space-xs);
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-alt);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-soft);
+}
+.timeline-item h3{
+  margin-top: var(--space-2xs);
+  font-size: var(--fs-h3);
+}
+.timeline-item p{
+  margin-top: var(--space-3xs);
+  max-width: 56ch;
+}
+
+@media (min-width: 760px){
+  .timeline{ padding-left: var(--space-xl); }
+  .timeline-item::before{ left: calc(var(--space-xl) * -1 - 6px); }
+}

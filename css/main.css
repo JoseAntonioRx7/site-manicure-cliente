@@ -1,0 +1,24 @@
+/* =========================================================
+   MAIN.CSS
+   Ponto único de entrada — importa todos os módulos de estilo
+   em ordem de especificidade crescente. Não escreva estilos
+   soltos aqui; adicione um novo arquivo numerado e importe-o.
+   ========================================================= */
+@import url("00-reset.css");
+@import url("01-variables.css");
+@import url("02-base.css");
+@import url("03-layout.css");
+@import url("04-swatch-divider.css");
+@import url("05-placeholder.css");
+@import url("10-header.css");
+@import url("11-hero.css");
+@import url("12-about.css");
+@import url("13-services.css");
+@import url("14-gallery.css");
+@import url("15-testimonials.css");
+@import url("16-partnerships.css");
+@import url("17-journey.css");
+@import url("18-contact.css");
+@import url("19-footer.css");
+@import url("90-responsive.css");
+

@@ -1,0 +1,86 @@
+/* =========================================================
+   01-VARIABLES.CSS
+   Tokens de design — cores, tipografia, espaçamento, sombras.
+   Edite SOMENTE este arquivo para trocar a identidade visual
+   inteira do site (cores da marca, fontes, raios de borda).
+   ========================================================= */
+
+:root{
+  /* ---------- Cor: base ---------- */
+  --color-bg:            #FAF7F5;  /* branco quente (fundo principal) */
+  --color-bg-alt:        #F1EAE7;  /* branco acinzentado (fundo alternado) */
+  --color-surface:       #FFFFFF;  /* cartões, superfícies elevadas */
+
+  /* ---------- Cor: marca ---------- */
+  --color-red:           #C11F3C;  /* vermelho principal — "esmalte" */
+  --color-red-dark:      #8F1730;  /* vermelho profundo — hover/pressed */
+  --color-red-soft:      #F3E1E1;  /* vermelho muito claro — fundos sutis */
+  --color-gold:          #C89B3C;  /* dourado — uso raro, selo de conquista */
+
+  /* ---------- Cor: texto ---------- */
+  --color-ink:           #241F20;  /* texto principal (quase preto, quente) */
+  --color-ink-soft:      #6E6462;  /* texto secundário */
+  --color-ink-faint:     #A79D9A;  /* texto terciário / placeholders */
+  --color-on-red:        #FFF7F5;  /* texto sobre fundo vermelho */
+
+  /* ---------- Cor: bordas ---------- */
+  --color-border:        #E4DAD6;
+  --color-border-strong: #D8C9C4;
+
+  /* ---------- Tipografia ---------- */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-body:    "Work Sans", -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "Space Grotesk", "Work Sans", sans-serif;
+
+  --fs-hero:     clamp(2.6rem, 5.4vw, 4.6rem);
+  --fs-h1:       clamp(2.1rem, 3.6vw, 3rem);
+  --fs-h2:       clamp(1.6rem, 2.6vw, 2.2rem);
+  --fs-h3:       clamp(1.15rem, 1.6vw, 1.4rem);
+  --fs-body-lg:  1.15rem;
+  --fs-body:     1rem;
+  --fs-small:    0.875rem;
+  --fs-eyebrow:  0.78rem;
+
+  /* ---------- Espaçamento ---------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  --content-max: 1200px;
+  --content-narrow: 760px;
+
+  /* ---------- Forma ---------- */
+  --radius-sm:  8px;
+  --radius-md:  16px;
+  --radius-lg:  28px;
+  --radius-pill: 999px;
+
+  /* ---------- Sombra ---------- */
+  --shadow-sm: 0 2px 10px rgba(36, 31, 32, 0.06);
+  --shadow-md: 0 12px 30px rgba(36, 31, 32, 0.10);
+  --shadow-red: 0 14px 30px rgba(193, 31, 60, 0.22);
+
+  /* ---------- Movimento ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 180ms;
+  --dur-med:  420ms;
+  --dur-slow: 900ms;
+}
+
+/* Paleta de "esmaltes" usada na faixa decorativa (assinatura visual).
+   Editar aqui muda a faixa em TODAS as seções automaticamente
+   (ver js/modules/swatch-divider.js). */
+:root{
+  --swatch-1: #C11F3C; /* vermelho principal */
+  --swatch-2: #8F1730; /* vermelho profundo */
+  --swatch-3: #E7B4B0; /* rosê */
+  --swatch-4: #F1EAE7; /* branco acinzentado */
+  --swatch-5: #FFFFFF; /* branco puro */
+  --swatch-6: #C89B3C; /* dourado */
+}

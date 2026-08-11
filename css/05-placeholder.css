@@ -1,0 +1,40 @@
+/* =========================================================
+   05-PLACEHOLDER.CSS
+   Componente reutilizável para onde uma foto real deve entrar.
+   Usado em: hero, sobre, galeria, parcerias.
+   Basta trocar o <div class="placeholder-frame"> por uma
+   <img> real — ver docs/GUIA-DE-EDICAO.md
+   ========================================================= */
+.placeholder-frame{
+  --pf-fg: var(--color-red);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+  border: 1.5px dashed var(--color-border-strong);
+  background: linear-gradient(155deg, rgba(255,255,255,0.6), rgba(241,234,231,0.4));
+  color: var(--color-ink-faint);
+  text-align: center;
+  padding: var(--space-md);
+}
+.placeholder-frame svg{
+  width: 34px;
+  height: 34px;
+  color: var(--pf-fg);
+  opacity: 0.55;
+}
+.placeholder-frame__label{
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+.placeholder-frame__hint{
+  font-size: 0.72rem;
+  color: var(--color-ink-faint);
+  max-width: 20ch;
+}

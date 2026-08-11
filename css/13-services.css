@@ -1,0 +1,112 @@
+/* =========================================================
+   13-SERVICES.CSS
+   Tabelas de "Aplicações" e "Manutenções" — inspiradas
+   diretamente na cartela de preços original da cliente.
+   ========================================================= */
+.services__tabs{
+  display: inline-flex;
+  padding: 4px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  margin-bottom: var(--space-lg);
+}
+.services__tab{
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  transition: background var(--dur-fast), color var(--dur-fast);
+}
+.services__tab.is-active{
+  background: var(--color-red);
+  color: var(--color-on-red);
+}
+
+.services__panel{ display: none; }
+.services__panel.is-active{ display: block; }
+
+.price-grid{
+  display: grid;
+  gap: var(--space-md);
+}
+.price-card{
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+.price-card__title{
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: var(--space-sm);
+}
+.price-card__title svg{ width: 16px; height: 16px; }
+
+.price-row{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding-block: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+.price-row:last-child{ border-bottom: none; }
+.price-row__name{
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+.price-row__value{
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+/* Selo circular de preço — o "carimbo" da manutenção,
+   reproduzindo o destaque visual da tabela original. */
+.price-pill{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  height: 46px;
+  padding-inline: 4px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm), inset 0 0 0 1.5px var(--color-red);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-red);
+}
+
+.services__note{
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-red-soft);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-small);
+  color: var(--color-ink);
+}
+.services__note strong{ color: var(--color-red-dark); }
+.services__note + .services__note{ margin-top: var(--space-sm); }
+
+.services__cta{
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+@media (min-width: 760px){
+  .price-grid{ grid-template-columns: repeat(2, 1fr); }
+}

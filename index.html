@@ -1,11 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubi Nails Studio — Nail Designer</title>
+<meta name="description" content="Estúdio de unhas especializado em alongamento, fibra de vidro, gel e nail art. Conheça o trabalho, os serviços e agende pelo Instagram.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23C11F3C'/%3E%3Ccircle cx='12' cy='12' r='5' fill='%23FAF7F5'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== CABEÇALHO ===================== -->
+<header class="site-header">
+  <a href="#inicio" class="brand">
+    <span class="brand__mark">Rubi</span><span>Nails Studio</span>
+  </a>
+
+  <nav class="main-nav" aria-label="Navegação principal">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#parcerias">Parcerias</a></li>
+      <li><a href="#jornada">Jornada</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions">
+    <a class="icon-btn" href="#" data-config-href="instagramUrl" target="_blank" rel="noopener" aria-label="Abrir Instagram">
+      <span aria-hidden="true"></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navegação móvel">
+  <ul>
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#parcerias">Parcerias</a></li>
+    <li><a href="#jornada">Jornada</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="btn btn--primary" href="#" data-config-href="instagramUrl" target="_blank" rel="noopener">Agendar pelo Instagram</a>
+</nav>
+
+<main id="conteudo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__content">
+        <span class="eyebrow">Nail designer &amp; empreendedora</span>
+        <h1>Unhas que carregam <em>confiança</em> em cada detalhe.</h1>
+        <p class="hero__lede">
+          Alongamento, fibra de vidro, gel e nail art feitos com técnica, higiene
+          impecável e o cuidado de quem trata cada cliente como referência —
+          não como número.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#" data-config-href="instagramUrl" target="_blank" rel="noopener">
+            Agendar pelo Instagram
+          </a>
+          <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num"><span class="js-counter" data-target="500">0</span><span class="stat__suffix">+</span></div>
+            <div class="stat__label">Clientes atendidas</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num"><span class="js-counter" data-target="4">0</span><span class="stat__suffix">+</span></div>
+            <div class="stat__label">Anos de experiência</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num"><span class="js-counter" data-target="5" data-decimals="1">0</span></div>
+            <div class="stat__label">Avaliação média</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="placeholder-frame">
+          <span style="width:34px;height:34px;color:var(--color-red);opacity:.55;"></span>
+          <span class="placeholder-frame__label">Foto em destaque</span>
+          <span class="placeholder-frame__hint">Substitua por uma foto de trabalho ou retrato profissional</span>
+        </div>
+        <div class="hero__seal" id="hero-seal"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="js-swatch-divider container"></div>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about section" id="sobre">
+    <div class="container">
+      <div class="about__visual reveal">
+        <div class="placeholder-frame" style="border-radius:var(--radius-lg);height:100%;">
+          <span id="about-photo-icon" style="width:34px;height:34px;color:var(--color-red);opacity:.55;"></span>
+          <span class="placeholder-frame__label">Foto da profissional</span>
+          <span class="placeholder-frame__hint">Um retrato dela trabalhando costuma converter melhor</span>
+        </div>
+      </div>
+
+      <div class="about__body">
+        <span class="eyebrow">Quem cuida das suas mãos</span>
+        <h2 class="reveal">Técnica apurada, resultado que dura e o carinho de quem faz por amor.</h2>
+        <p class="reveal">
+          Cada atendimento começa com um diagnóstico simples: o que a sua rotina
+          pede e o que as suas unhas precisam para aguentar. Daí vem a escolha do
+          molde, da técnica e do acabamento — sempre com material de qualidade e
+          protocolo rígido de higiene.
+        </p>
+        <p class="reveal">
+          O resultado é o mesmo motivo pelo qual tantas clientes viraram fixas:
+          consistência. A unha que sai daqui é a unha que ainda está bonita
+          semanas depois.
+        </p>
+
+        <div class="about__badges reveal">
+          <span class="badge"><span id="badge-icon-1"></span> Materiais de qualidade</span>
+          <span class="badge"><span id="badge-icon-2"></span> Higiene rigorosa</span>
+          <span class="badge"><span id="badge-icon-3"></span> Atendimento pontual</span>
+        </div>
+
+        <div class="about__stats">
+          <div class="about-stat reveal">
+            <div class="stat__num"><span class="js-counter" data-target="500">0</span>+</div>
+            <div class="stat__label">Clientes atendidas</div>
+          </div>
+          <div class="about-stat reveal">
+            <div class="stat__num"><span class="js-counter" data-target="4">0</span>+</div>
+            <div class="stat__label">Anos de estúdio</div>
+          </div>
+          <div class="about-stat reveal">
+            <div class="stat__num"><span class="js-counter" data-target="12">0</span>+</div>
+            <div class="stat__label">Cursos e certificações</div>
+          </div>
+          <div class="about-stat reveal">
+            <div class="stat__num"><span class="js-counter" data-target="98">0</span>%</div>
+            <div class="stat__label">Clientes que retornam</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="js-swatch-divider container"></div>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="services section section--alt" id="servicos">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Tabela de preços</span>
+        <h2>Serviços</h2>
+        <p>Aplicações completas para quem está começando um trabalho novo, e manutenções para quem já é da casa.</p>
+      </div>
+
+      <div class="services__tabs" id="services-tabs" role="tablist" aria-label="Tipo de serviço"></div>
+      <div id="services-panels"></div>
+
+      <div class="services__cta reveal">
+        <a class="btn btn--primary" href="#" data-config-href="instagramUrl" target="_blank" rel="noopener">Agendar minha sessão</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="js-swatch-divider container"></div>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section class="gallery section" id="galeria">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Portfólio</span>
+        <h2>Trabalhos que falam por si</h2>
+        <p>Uma amostra do que sai daqui. Clique em qualquer foto para ampliar.</p>
+      </div>
+
+      <div class="gallery__grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox da galeria -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__box">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Fechar"><span id="lightbox-close-icon"></span></button>
+      <div id="lightbox-body" style="width:100%;height:100%;"></div>
+    </div>
+  </div>
+
+  <div class="js-swatch-divider container"></div>
+
+  <!-- ===================== AVALIAÇÕES ===================== -->
+  <section class="testimonials section section--alt" id="avaliacoes">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Depoimentos</span>
+        <h2>O que as clientes dizem</h2>
+        <p>Confiança construída atendimento após atendimento.</p>
+      </div>
+
+      <div class="testimonial-track" id="testimonial-track"></div>
+
+      <div class="testimonials__controls">
+        <button class="icon-btn" id="testimonial-prev" aria-label="Depoimento anterior"><span id="prev-icon"></span></button>
+        <button class="icon-btn" id="testimonial-next" aria-label="Próximo depoimento"><span id="next-icon"></span></button>
+      </div>
+
+      <p class="testimonials__disclaimer">
+        Depoimentos de exemplo — serão substituídos pelas avaliações reais das clientes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PARCERIAS ===================== -->
+  <section class="section" id="parcerias">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Rede de apoio</span>
+        <h2>Marcas e parcerias</h2>
+        <p>Empresas e eventos que já caminharam junto com este trabalho.</p>
+      </div>
+
+      <div class="partners__grid" id="partners-grid"></div>
+    </div>
+  </section>
+
+  <div class="js-swatch-divider container"></div>
+
+  <!-- ===================== JORNADA ===================== -->
+  <section class="section section--alt" id="jornada">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">O que vem por aí</span>
+        <h2>Metas, viagens, encontros e participações</h2>
+        <p>Uma empreendedora em movimento — os próximos passos da jornada, em ordem.</p>
+      </div>
+
+      <div class="journey__filters" id="journey-filters"></div>
+      <ul class="timeline" id="journey-timeline"></ul>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="contact reveal">
+        <div class="contact__inner">
+          <span class="eyebrow">Vamos marcar?</span>
+          <h2>Suas unhas merecem esse cuidado.</h2>
+          <p>O agendamento é feito diretamente pelo Instagram — respondo por lá o mais rápido possível.</p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="#" data-config-href="instagramUrl" target="_blank" rel="noopener">
+              Chamar no Instagram
+            </a>
+            <a class="btn btn--ghost" href="#" data-config-href="whatsappUrl" data-config-optional="whatsapp" target="_blank" rel="noopener">
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <div class="contact__handle" data-config-text="instagramHandle">@rubi.nailsstudio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="brand"><span class="brand__mark">Rubi</span><span>Nails Studio</span></a>
+        <p>Nail designer dedicada a transformar unhas em detalhes de confiança.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Comunidade</h4>
+          <ul>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#parcerias">Parcerias</a></li>
+            <li><a href="#jornada">Jornada</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="#" data-config-href="instagramUrl" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#contato">Agendar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="current-year">2026</span> Rubi Nails Studio. Todos os direitos reservados.</span>
+      <div class="footer__social">
+        <a class="icon-btn" href="#" data-config-href="instagramUrl" target="_blank" rel="noopener" aria-label="Instagram">
+          <span id="footer-instagram-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<!-- Ordem importa: ícones e dados primeiro, depois módulos, depois main.js -->
+<script src="js/modules/icons.js"></script>
+
+<script src="js/data/site-config.js"></script>
+<script src="js/data/services-data.js"></script>
+<script src="js/data/gallery-data.js"></script>
+<script src="js/data/testimonials-data.js"></script>
+<script src="js/data/partnerships-data.js"></script>
+<script src="js/data/journey-data.js"></script>
+
+<script src="js/modules/apply-config.js"></script>
+<script src="js/modules/swatch-divider.js"></script>
+<script src="js/modules/mobile-menu.js"></script>
+<script src="js/modules/scroll-spy.js"></script>
+<script src="js/modules/scroll-reveal.js"></script>
+<script src="js/modules/counter.js"></script>
+<script src="js/modules/render-services.js"></script>
+<script src="js/modules/render-gallery.js"></script>
+<script src="js/modules/gallery-lightbox.js"></script>
+<script src="js/modules/render-testimonials.js"></script>
+<script src="js/modules/render-partnerships.js"></script>
+<script src="js/modules/render-journey.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Injeta os ícones que ficam fora dos módulos de renderização -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var map = {
+      "hero-seal": "medal",
+      "about-photo-icon": null,
+      "badge-icon-1": "sparkle",
+      "badge-icon-2": "award",
+      "badge-icon-3": "hand",
+      "lightbox-close-icon": "close",
+      "prev-icon": "chevronLeft",
+      "next-icon": "chevronRight",
+      "footer-instagram-icon": "instagram"
+    };
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      var iconName = map[id];
+      if (el && iconName && window.Icons && Icons[iconName]) el.innerHTML = Icons[iconName]();
+    });
+    document.querySelectorAll(".header-actions .icon-btn span, .mobile-nav + * .icon-btn span").forEach(function(){});
+    document.querySelectorAll('.icon-btn[aria-label="Abrir Instagram"] span, .icon-btn[aria-label="Instagram"] span').forEach(function (el) {
+      el.innerHTML = Icons.instagram();
+    });
+  });
+</script>
+
 </body>
 </html>

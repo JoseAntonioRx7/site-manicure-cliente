@@ -1,0 +1,18 @@
+/* =========================================================
+   16-PARTNERSHIPS.CSS
+   ========================================================= */
+.partners__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+.partner-card{
+  aspect-ratio: 16/10;
+  border-radius: var(--radius-md);
+}
+.partner-card .placeholder-frame svg{ width: 26px; height: 26px; }
+.partner-card .placeholder-frame__label{ font-size: 0.78rem; }
+
+@media (min-width: 700px){
+  .partners__grid{ grid-template-columns: repeat(4, 1fr); }
+}
