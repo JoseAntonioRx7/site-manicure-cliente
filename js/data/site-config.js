@@ -13,7 +13,7 @@ window.SITE_DATA.config = {
   businessName: "Viicz Andrade",       // sugestão de nome — troque pelo nome real, se já existir
   tagline: "Nail designer",
   city: "Recife, PE",                   // troque pela cidade real
-  instagramHandle: "@viiczandrade",     // troque pelo @ real do Instagram
-  instagramUrl: "https://instagram.com/viiczandrade",
-  whatsappUrl: ""                           // opcional — ex: "https://wa.me/55DDXXXXXXXXX"
+  instagramHandle: "@viicz.nails",     // troque pelo @ real do Instagram
+  instagramUrl: "https://www.instagram.com/viicz.nails/", // opcional — ex: "https://www.instagram.com/username/"
+  whatsappUrl: "https://wa.me/5581995652041"                           // opcional — ex: "https://wa.me/55DDXXXXXXXXX"
 };

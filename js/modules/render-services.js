@@ -25,7 +25,10 @@
           </div>
           ${column.map((service) => `
             <div class="price-row">
-              <span class="price-row__name">${service.name}</span>
+              <div class="price-row__meta">
+                ${service.image ? `<img class="price-row__image" src="${service.image}" alt="${service.name}" loading="lazy">` : ''}
+                <span class="price-row__name">${service.name}</span>
+              </div>
               <span class="price-row__value">${service.highlight ? `<span class="price-pill">${service.price}</span>` : service.price}</span>
             </div>
           `).join('')}
