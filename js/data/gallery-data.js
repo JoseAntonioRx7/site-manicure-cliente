@@ -16,5 +16,6 @@ window.SITE_DATA.gallery = [
   { id: "g6", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02.jpeg", alt: "Unhas em vermelho intenso com acabamento premium" },
   { id: "g7", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03%20(1).jpeg", alt: "Detalhe de manicure em nude com linhas e contraste" },
   { id: "g8", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03%20(2).jpeg", alt: "Unhas com design em vermelho e dourado com brilho" },
-  { id: "g9", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03.jpeg", alt: "Nail art com vermelho vibrante e delicados detalhes em branco" }
+  { id: "g9", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03.jpeg", alt: "Nail art com vermelho vibrante e delicados detalhes em branco" },
+  { id: "g10", image: "image/WhatsApp%20Image%202026-08-14%20at%2017.00.39.jpeg", alt: "Unhas pretas com brilho metálico e acabamento sofisticado" }
 ];

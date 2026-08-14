@@ -69,6 +69,12 @@
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-border);
 }
+.hero__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .hero__visual .placeholder-frame{ width: 78%; height: 78%; }
 
 .hero__seal{
