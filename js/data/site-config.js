@@ -10,10 +10,10 @@
 window.SITE_DATA = window.SITE_DATA || {};
 
 window.SITE_DATA.config = {
-  businessName: "Rubi Nails Studio",       // sugestão de nome — troque pelo nome real, se já existir
+  businessName: "Viicz Andrade",       // sugestão de nome — troque pelo nome real, se já existir
   tagline: "Nail designer",
-  city: "Sua Cidade, UF",                   // troque pela cidade real
-  instagramHandle: "@rubi.nailsstudio",     // troque pelo @ real do Instagram
-  instagramUrl: "https://instagram.com/rubi.nailsstudio",
+  city: "Recife, PE",                   // troque pela cidade real
+  instagramHandle: "@viiczandrade",     // troque pelo @ real do Instagram
+  instagramUrl: "https://instagram.com/viiczandrade",
   whatsappUrl: ""                           // opcional — ex: "https://wa.me/55DDXXXXXXXXX"
 };
