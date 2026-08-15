@@ -13,15 +13,15 @@ window.SITE_DATA.services = {
     note: "Esmaltação e decoração inclusas.",
     columns: [
       [
-        { name: "Molde F1", price: "R$ 110", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.01%20(1).jpeg" },
+        { name: "Molde F1", price: "R$ 110", image: "image/WhatsApp%20Image%202026-08-14%20at%2018.22.36.jpeg" },
         { name: "Gel na tips", price: "R$ 100", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02%20(2).jpeg" },
-        { name: "Esmaltação em Gel", price: "R$ 60", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03%20(1).jpeg" },
-        { name: "Esmaltação Simples — Mão", price: "R$ 35", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03.jpeg" }
+        { name: "Esmaltação em Gel", price: "R$ 60", image: "image/WhatsApp Image 2026-08-14 at 18.22.37 (2).jpeg" },
+        { name: "Esmaltação Simples — Mão", price: "R$ 35", image: "image/WhatsApp Image 2026-08-14 at 18.28.35.jpeg" }
       ],
       [
-        { name: "Fibra de Vidro", price: "R$ 135", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.01.jpeg" },
-        { name: "Banho de Gel", price: "R$ 80", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02.jpeg" },
-        { name: "Esmaltação Simples — Pé", price: "R$ 40", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02%20(1).jpeg" }
+        { name: "Fibra de Vidro", price: "R$ 135", image: "image/WhatsApp Image 2026-08-14 at 18.22.37 (1).jpeg" },
+        { name: "Banho de Gel", price: "R$ 80", image: "image/WhatsApp Image 2026-08-14 at 18.22.37.jpeg " },
+        { name: "Esmaltação Simples — Pé", price: "R$ 40", image: "image/WhatsApp Image 2026-08-14 at 18.28.35.jpeg" }
       ]
     ]
   },
@@ -30,15 +30,15 @@ window.SITE_DATA.services = {
     note: "Caso falte alguma unha (alongamento), será cobrado um valor adicional de R$ 5 por cada unha faltando.",
     columns: [
       [
-        { name: "Molde F1", price: "R$ 90", highlight: true, image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02%20(3).jpeg" },
-        { name: "Gel na tips", price: "R$ 80", highlight: true, image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03%20(2).jpeg" },
-        { name: "Esmaltação em Gel", price: "R$ 60", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03%20(1).jpeg" },
-        { name: "Esmaltação Simples — Mão", price: "R$ 35", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.03.jpeg" }
+        { name: "Molde F1", price: "R$ 90", highlight: true, image: "image/WhatsApp%20Image%202026-08-14%20at%2018.22.36.jpeg" },
+        { name: "Gel na tips", price: "R$ 80", highlight: true, image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02%20(2).jpeg" },
+        { name: "Esmaltação em Gel", price: "R$ 60", image: "image/WhatsApp Image 2026-08-14 at 18.22.37 (2).jpeg" },
+        { name: "Esmaltação Simples — Mão", price: "R$ 35", image: "image/WhatsApp Image 2026-08-14 at 18.28.35.jpeg" }
       ],
       [
-        { name: "Fibra de Vidro", price: "R$ 115", highlight: true, image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.01.jpeg" },
-        { name: "Banho de Gel", price: "R$ 60", highlight: true, image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02.jpeg" },
-        { name: "Esmaltação Simples — Pé", price: "R$ 40", image: "image/WhatsApp%20Image%202026-08-08%20at%2022.06.02%20(1).jpeg" }
+        { name: "Fibra de Vidro", price: "R$ 115", highlight: true, image: "image/WhatsApp%20Image%202026-08-14%20at%2018.22.37 (1).jpeg" },
+        { name: "Banho de Gel", price: "R$ 60", highlight: true, image: "image/WhatsApp Image 2026-08-14 at 18.22.37.jpeg" },
+        { name: "Esmaltação Simples — Pé", price: "R$ 40", image: "image/WhatsApp Image 2026-08-14 at 18.28.35.jpeg" }
       ]
     ]
   }
