@@ -1,15 +1,15 @@
 /* =========================================================
    13-SERVICES.CSS
-   Tabelas de "Aplicações" e "Manutenções" — inspiradas
-   diretamente na cartela de preços original da cliente.
+   Tabela de preços dos serviços.
    ========================================================= */
 .services__tabs{
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   padding: 4px;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
-  margin-bottom: var(--space-lg);
+  margin: 0 auto var(--space-lg);
 }
 .services__tab{
   padding: 0.6rem 1.3rem;
@@ -32,6 +32,8 @@
 .price-grid{
   display: grid;
   gap: var(--space-md);
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
 }
 .price-card{
   background: var(--color-surface);
@@ -90,27 +92,15 @@
   font-size: 1.05rem;
   white-space: nowrap;
 }
-
-/* Selo circular de preço — o "carimbo" da manutenção,
-   reproduzindo o destaque visual da tabela original. */
-.price-pill{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 46px;
-  height: 46px;
-  padding-inline: 4px;
-  border-radius: 50%;
-  background: var(--color-surface);
-  box-shadow: var(--shadow-sm), inset 0 0 0 1.5px var(--color-red);
-  font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--color-red);
+.price-row__value--quote{
+  white-space: normal;
+  text-align: right;
 }
 
 .services__note{
   margin-top: var(--space-lg);
+  margin-inline: auto;
+  max-width: 760px;
   padding: var(--space-md);
   background: var(--color-red-soft);
   border-radius: var(--radius-md);
@@ -123,8 +113,4 @@
 .services__cta{
   margin-top: var(--space-xl);
   text-align: center;
-}
-
-@media (min-width: 760px){
-  .price-grid{ grid-template-columns: repeat(2, 1fr); }
 }

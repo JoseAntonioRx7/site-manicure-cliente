@@ -1,44 +1,41 @@
 (function () {
   const services = (window.SITE_DATA && window.SITE_DATA.services) || {};
 
-  function renderTabs() {
+  function renderServices() {
     const tabHost = document.getElementById('services-tabs');
     const panelsHost = document.getElementById('services-panels');
-    if (!tabHost || !panelsHost || !Object.keys(services).length) return;
-
     const keys = Object.keys(services);
-    tabs = keys.map((key, index) => {
+    if (!tabHost || !panelsHost || !keys.length) return;
+
+    tabHost.innerHTML = keys.map((key, index) => {
       const item = services[key];
-      const isActive = index === 0 ? 'is-active' : '';
-      return `<button class="services__tab ${isActive}" type="button" role="tab" aria-selected="${index === 0}" data-tab="${key}">${item.label}</button>`;
+      const isActive = index === 0;
+      return `<button class="services__tab${isActive ? ' is-active' : ''}" id="services-tab-${key}" type="button" role="tab" aria-selected="${isActive}" aria-controls="services-panel-${key}" data-tab="${key}">${item.label}</button>`;
     }).join('');
-    tabHost.innerHTML = tabs;
 
     panelsHost.innerHTML = keys.map((key, index) => {
       const item = services[key];
-      const activeClass = index === 0 ? 'is-active' : '';
-      const cards = item.columns.map((column) => `
-        <div class="price-card">
-          <div class="price-card__title">
-            ${window.Icons && window.Icons.sparkle ? window.Icons.sparkle() : ''}
-            <span>${item.label}</span>
-          </div>
-          ${column.map((service) => `
-            <div class="price-row">
-              <div class="price-row__meta">
-                ${service.image ? `<img class="price-row__image" src="${service.image}" alt="${service.name}" loading="lazy">` : ''}
-                <span class="price-row__name">${service.name}</span>
-              </div>
-              <span class="price-row__value">${service.highlight ? `<span class="price-pill">${service.price}</span>` : service.price}</span>
-            </div>
-          `).join('')}
-        </div>
-      `).join('');
-
+      const isActive = index === 0;
       return `
-        <div class="services__panel ${activeClass}" role="tabpanel" data-panel="${key}">
-          <div class="price-grid">${cards}</div>
-          <p class="services__note"><strong>Observação:</strong> ${item.note}</p>
+        <div class="services__panel${isActive ? ' is-active' : ''}" id="services-panel-${key}" role="tabpanel" aria-labelledby="services-tab-${key}" data-panel="${key}">
+          <div class="price-grid">
+            <div class="price-card">
+              <div class="price-card__title">
+                ${window.Icons && window.Icons.sparkle ? window.Icons.sparkle() : ''}
+                <span>${item.label}</span>
+              </div>
+              ${item.items.map((service) => `
+                <div class="price-row">
+                  <div class="price-row__meta">
+                    ${service.image ? `<img class="price-row__image" src="${service.image}" alt="${service.name}" loading="lazy">` : ''}
+                    <span class="price-row__name">${service.name}</span>
+                  </div>
+                  <span class="price-row__value${service.price === 'Consultar orçamento' ? ' price-row__value--quote' : ''}">${service.price}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+          ${item.note ? `<p class="services__note"><strong>Observação:</strong> ${item.note}</p>` : ''}
         </div>
       `;
     }).join('');
@@ -60,8 +57,8 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderTabs);
+    document.addEventListener('DOMContentLoaded', renderServices);
   } else {
-    renderTabs();
+    renderServices();
   }
 })();
